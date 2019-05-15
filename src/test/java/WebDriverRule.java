@@ -4,10 +4,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class WebDriverRule extends ExternalResource {
     private WebDriver webDriver;
+
     @Override
     protected void before() {
         webDriver = new ChromeDriver();
-
     }
 
     @Override
@@ -19,4 +19,3 @@ public class WebDriverRule extends ExternalResource {
         return webDriver;
     }
 }
-
